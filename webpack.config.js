@@ -17,18 +17,20 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ],
     module: {
-        loaders: [
-        {
+        loaders: [{
             test: /\.js$/,
             exclude: /node_modules/,
             loaders: ['react-hot', 'babel-loader'],
             include: path.join(__dirname, 'app')
-        },
-        { test: /\.json$/, loader: 'json' },
-        { test: /\.css$/, loader: "style-loader!css-loader" }
-    ],
-    query: {
-      presets: ['react', 'es2015', 'stage-0']
-    }
+        }, {
+            test: /\.json$/,
+            loader: 'json'
+        }, {
+            test: /\.css$/,
+            loader: "style-loader!css-loader"
+        }],
+        query: {
+            presets: ['react', 'es2015', 'stage-0']
+        }
     }
 };

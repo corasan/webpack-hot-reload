@@ -7,7 +7,7 @@ Basic configuration that I use when working in React projects.
 I like to create a `dev` script in my `package.json`
 ```
 "scripts": {
-    dev: node hotServer.js
+    "dev": "node hotServer.js"
 }
 ```
 
